@@ -3,11 +3,11 @@
 from unidecode import unidecode
 from cromlech.container.components import Container as BaseContainer
 from cromlech.container.contained import Contained
-from cromlech.container.interfaces import INameChooser
+from cromlech.container.interfaces import IContainer, INameChooser
 from uvc.content import schematic_bootstrap, schema
-from uvc.interfaces import IContent, IContainer, IDescriptiveSchema
+from uvc.content.interfaces import IContent, IDescriptiveSchema
 from zope.interface import implementer
-from grokcore.component import context
+from grokcore.component import context, Adapter
 
 
 @implementer(IContent)
