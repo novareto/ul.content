@@ -14,8 +14,9 @@ version = '1.0'
 long_description = read('README.txt') + '\n' + read('HISTORY.txt')
 
 install_requires = [
-     "transaction",
-     "ul.browser",
+    "setuptools",
+    "transaction",
+    "ul.browser",
     ]
 
 tests_require = [
