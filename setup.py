@@ -17,14 +17,17 @@ install_requires = [
     "cromlech.container",
     "grokcore.component",
     "setuptools",
-    "ul.browser",
     "unidecode",
     "uvc.content",
     "zope.interface",
+    "zope.component",
+    "cromlech.browser",
     ]
 
 tests_require = [
+    "pytest",
     "zope.schema",
+    "zope.location",
     ]
 
 setup(
