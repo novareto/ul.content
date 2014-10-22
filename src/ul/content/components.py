@@ -23,7 +23,10 @@ class Container(BaseContainer):
     """Base Container
     """
     schema(IDescriptiveSchema)
-    __init__ = schematic_bootstrap
+
+    def __init__(self, **kws):
+        super(Container, self).__init__()
+        schematic_bootstrap(self, **kws)
 
 
 @implementer(INameChooser)

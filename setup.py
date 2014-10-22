@@ -14,12 +14,17 @@ version = '1.0'
 long_description = read('README.txt') + '\n' + read('HISTORY.txt')
 
 install_requires = [
+    "cromlech.container",
+    "grokcore.component",
     "setuptools",
-    "transaction",
     "ul.browser",
+    "unidecode",
+    "uvc.content",
+    "zope.interface",
     ]
 
 tests_require = [
+    "zope.schema",
     ]
 
 setup(
