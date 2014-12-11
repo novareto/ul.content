@@ -118,4 +118,3 @@ def test_containment():
     painting = london_museum['lady']
     assert painting.__name__ == 'lady'
     assert painting.__parent__ is london_museum
-

@@ -10,18 +10,18 @@ def read(*rnames):
             os.path.join(os.path.dirname(__file__), 'docs'),
             *rnames)).read()
 
-version = '1.0'
+version = '0.1'
 long_description = read('README.txt') + '\n' + read('HISTORY.txt')
 
 install_requires = [
+    "cromlech.browser",
     "cromlech.container",
     "grokcore.component",
     "setuptools",
     "unidecode",
     "uvc.content",
-    "zope.interface",
     "zope.component",
-    "cromlech.browser",
+    "zope.interface",
     ]
 
 tests_require = [
